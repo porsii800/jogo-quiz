@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Margarine&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Quiz Ecobio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="start-screen">
+        <h1>Quiz Ecobio</h1>
+        <button id="botao-jogar" onclick="startQuiz()">Jogar</button>
+    </div>
+    <div class="container" id="quiz-screen" style="display: none;">
+        <h1>Quiz Ecobio</h1>
+        <div id="question-container">
+            <p id="question"></p>
+            <button class="answer-button" onclick="checkAnswer(true)">Verdadeiro</button>
+            <button class="answer-button" onclick="checkAnswer(false)">Falso</button>
+        </div>
+        <p id="feedback"></p>
+        <button id="next-button" onclick="nextQuestion()">Próxima Pergunta</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
