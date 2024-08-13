@@ -6,23 +6,24 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Margarine&family=Overpass:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Quiz Ecobio</title>
+    <title>Quiz de Ecologia</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="fundo" id="start-screen">
-        <h1>Quiz Ecobio</h1>
-        <button id="botao-jogar" onclick="startQuiz()">Jogar</button>
+    <div id="start-screen" class="fundo">
+        <h1>Quiz ECOBIO</h1>
+        <button id="botao-jogar" onclick="startQuiz()">JOGAR</button>
     </div>
-    <div class="fundo" id="quiz-screen" style="display: none;">
-        <h1>Quiz Ecobio</h1>
-        <div id="question-container">
-            <p id="question"></p>
-            <button class="answer-button" onclick="checkAnswer(true)">Verdadeiro</button>
-            <button class="answer-button" onclick="checkAnswer(false)">Falso</button>
-        </div>
-        <p id="feedback"></p>
-        <button id="next-button" onclick="nextQuestion()">Próxima Pergunta</button>
+
+    <div id="quiz-screen" class="fundo" style="display: none;">
+        <h1>Perguntas</h1>
+        <div id="question"></div>
+        <button id="true-button" class="answer-button" onclick="checkAnswer(true)">Verdadeiro</button>
+        <button id="false-button" class="answer-button" onclick="checkAnswer(false)">Falso</button>
+        <div id="feedback"></div>
+        <button id="next-button" onclick="nextQuestion()">Próxima</button>
+       
+        <button id="repeat-button" onclick="repeatQuiz()" style="display: none;">Repetir Quiz</button>
     </div>
 
     <script src="script.js"></script>

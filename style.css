@@ -1,6 +1,6 @@
 body {
     font-family: "Margarine", sans-serif;
-    background-color: #e8f5e9; /* Verde muito claro */
+    background-color: #e8f5e9; 
     color: #333;
     text-align: center;
     margin: 0;
@@ -9,20 +9,24 @@ body {
 }
 
 
+
+
 .fundo {
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #ffffff; /* Branco */
+    background-color: #ffffff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     
 }
 
 h1 {
-    color: #2e7d32; /* Verde escuro */
+    color: #2e7d32; 
 }
+
+
 
 
 #botao-jogar, .answer-button, #next-button {
@@ -37,32 +41,48 @@ h1 {
 }
 
 #botao-jogar {
-    background-color: #8EA267; /* Verde médio */
+    background-color: #8EA267; 
 }
 
 #botao-jogar:hover {
-    background-color: #4c8535fb; /* Verde escuro */
+    background-color: #4c8535fb; 
 }
 
 .answer-button {
-    background-color: #388e3c; /* Verde médio */
+    background-color: #388e3c; 
 }
 
 .answer-button:hover {
-    background-color: #2c6b2f; /* Verde escuro */
+    background-color: #2c6b2f; 
 }
 
 #next-button {
     display: none;
-    background-color: #4caf50; /* Verde claro */
+    background-color: #4caf50; 
 }
 
 .next-button:hover {
-    background-color: #43a047; /* Verde um pouco mais escuro */
+    background-color: #43a047; 
 }
 
 #feedback {
-    margin: 10px 0;
-    font-size: 18px;
+    margin: 15px 0;
+    font-size: 25px;
+    text-align: center;
     font-weight: bold;
+}
+
+#repeat-button {
+    background-color: #43a047; 
+    padding: 10px 20px;
+    font-size: 20px;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+#repeat-button:hover {
+    background-color: #8EA267; 
 }

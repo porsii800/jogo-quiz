@@ -33,16 +33,25 @@ function displayQuestion() {
     const questionElement = document.getElementById('question');
     const feedbackElement = document.getElementById('feedback');
     const nextButton = document.getElementById('next-button');
+    const trueButton = document.getElementById('true-button');
+    const falseButton = document.getElementById('false-button');
+    const repeatButton = document.getElementById('repeat-button');
     
     if (currentQuestionIndex < questions.length) {
         const currentQuestion = questions[currentQuestionIndex];
         questionElement.textContent = currentQuestion.question;
         feedbackElement.textContent = '';
         nextButton.style.display = 'none';
+        trueButton.style.display = 'inline-block';
+        falseButton.style.display = 'inline-block';
+        repeatButton.style.display = 'none'; // Esconder o botão de repetir enquanto o quiz está em andamento
     } else {
         questionElement.textContent = 'Quiz terminado!';
         feedbackElement.textContent = '';
         nextButton.style.display = 'none';
+        trueButton.style.display = 'none';
+        falseButton.style.display = 'none';
+        repeatButton.style.display = 'inline-block'; // Exibir o botão de repetir ao final do quiz
     }
 }
 
@@ -61,5 +70,10 @@ function checkAnswer(userAnswer) {
 
 function nextQuestion() {
     currentQuestionIndex++;
+    displayQuestion();
+}
+
+function repeatQuiz() {
+    currentQuestionIndex = 0; // Reiniciar o índice da pergunta
     displayQuestion();
 }
