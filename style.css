@@ -9,7 +9,7 @@ body {
 }
 
 
-.container {
+.fundo {
     width: 80%;
     max-width: 600px;
     margin: 20px auto;
@@ -57,7 +57,7 @@ h1 {
     background-color: #4caf50; /* Verde claro */
 }
 
-#next-button:hover {
+.next-button:hover {
     background-color: #43a047; /* Verde um pouco mais escuro */
 }
 
